@@ -10,6 +10,7 @@
 ```
 
 ![Sakai](./Sakai_Nvim.png)
+*Sakai on cool-retro-term 🌌*
 
 ***Sakai*** *(坂井)* is the name of my personal configuration for Neovim.
 This is a light and functional configuration that converts Neovim to a full IDE with many easy-to-learn shortcuts.
