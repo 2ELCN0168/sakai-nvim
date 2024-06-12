@@ -10,6 +10,7 @@ This build is updated regularly.
 cd ~
 git clone https://github.com/2ELCN0168/sakai-nvim
 mv sakai-nvim/nvim ~/.config
+rm -rf sakai-nvim
 ```
 
 ## Dependencies
@@ -17,6 +18,7 @@ mv sakai-nvim/nvim ~/.config
 There are some dependencies:
 
 - make ;
+- gcc *(or any C compiler)* ;
 
   ***
 
