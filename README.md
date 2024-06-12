@@ -1,4 +1,4 @@
-# Sakai Neovim
+# 🥢 Sakai Neovim 🥢
 
 ```
                                   ███████╗ █████╗ ██╗  ██╗ █████╗ ██╗          
@@ -16,7 +16,7 @@ This is a light and functional configuration that converts Neovim to a full IDE 
 
 This build is updated regularly.
 
-## How to install?
+## 🍤 How to install?
 
 ```bash
 cd ~
@@ -25,7 +25,7 @@ mv sakai-nvim/nvim ~/.config
 rm -rf sakai-nvim
 ```
 
-## Dependencies
+## 🍣 Dependencies
 
 There are some dependencies:
 
@@ -34,7 +34,7 @@ There are some dependencies:
 
   ***
 
-  TODO :
+  ## 🍚 TODO :
 
   - [ ] - Add more icons ;
   - [ ] - Add themes ;
