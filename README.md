@@ -40,3 +40,8 @@ There are some dependencies:
   - [ ] - Add more icons ;
   - [ ] - Add themes ;
   - [ ] - Add terminal shortcuts inside Neovim ;
+  - [ ] - Add shortcuts to open Lazy ;
+  - [ ] - Add shortcuts to open Mason ;
+  - [ ] - Add shortcuts to manage git ;
+  - [ ] - Add shortcuts to manage ui (numbers, theme, etc.)
+  - [ ] - Add shortcut to open a floating terminal ;
