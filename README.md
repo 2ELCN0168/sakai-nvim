@@ -20,10 +20,8 @@ This build is updated regularly.
 ## 🍤 How to install?
 
 ```bash
-cd ~
-git clone https://github.com/2ELCN0168/sakai-nvim
-mv sakai-nvim/nvim ~/.config
-rm -rf sakai-nvim
+cd ~/.config
+git clone https://github.com/2ELCN0168/sakai-nvim nvim
 ```
 
 ## 🍣 Dependencies
