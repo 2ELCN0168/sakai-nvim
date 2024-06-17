@@ -9,7 +9,7 @@
                                   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝        
 ```
 
-![Sakai](./Sakai_Nvim.png)
+![Sakai](https://github.com/2ELCN0168/sakai-nvim/blob/screenshots/Sakai_Nvim.png)
 *Sakai on cool-retro-term 🌌*
 
 ***Sakai*** *(坂井)* is the name of my personal configuration for Neovim.
