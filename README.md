@@ -10,7 +10,6 @@
 ```
 
 ![Sakai](https://github.com/2ELCN0168/sakai-nvim/blob/screenshots/Sakai_Nvim.png)
-*Sakai on cool-retro-term 🌌*
 
 ***Sakai*** *(坂井)* is the name of my personal configuration for Neovim.
 This is a light and functional configuration that converts Neovim to a full IDE with many easy-to-learn shortcuts.
@@ -18,6 +17,16 @@ This is a light and functional configuration that converts Neovim to a full IDE 
 This build is updated regularly.
 
 ## 🍤 How to install?
+
+### 🥡 Make a backup!
+
+```bash
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim /tmp
+mv ~/.local/state/nvim /tmp
+```
+
+### 🌌 Then install
 
 ```bash
 cd ~/.config
