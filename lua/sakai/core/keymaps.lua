@@ -52,6 +52,7 @@ keymap.set("n", "<leader>un", "<cmd>set number<CR>", { desc = "Enable number" })
 keymap.set("n", "<leader>um", "<cmd>set nonumber<CR>", { desc = "Disable number" })
 keymap.set("n", "<leader>ur", "<cmd>set relativenumber<CR>", { desc = "Enable relative number" })
 keymap.set("n", "<leader>ue", "<cmd>set norelativenumber<CR>", { desc = "Disable relative number" })
+keymap.set("n", "<leader>ub", "<cmd>Barbecue toggle<CR>", { desc = "Disable relative number" })
 
 -- Management
 keymap.set("n", "<leader>ml", "<cmd>Lazy<CR>", { desc = "Open Lazy" })

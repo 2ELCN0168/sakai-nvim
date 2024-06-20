@@ -25,7 +25,7 @@ return {
                                 "🎏 - Restore session for current dir",
                                 "<cmd>SessionRestore<CR>"
                         ),
-                        dashboard.button("q", "☠️  - Quit Neovim", "<cmd>qa<CR>"),
+                        dashboard.button("q", "💀  - Quit Neovim", "<cmd>qa<CR>"),
                 }
 
                 -- Send config to alpha
