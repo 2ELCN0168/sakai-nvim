@@ -5,7 +5,7 @@ local keymap = vim.keymap
 -- keymap.set({ desc = ""})
 
 -- General
-keymap.set("n", "<leader>W", "<cmd>Alpha<CR>", { desc = "Sakai" })
+keymap.set("n", "<leader>W", "<cmd>Alpha<CR>", { desc = "Sakai Menu" })
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search higlights" })
 
@@ -28,26 +28,26 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 -- Terminal
 keymap.set(
-        "n",
-        "<leader>hh",
-        "<cmd>ToggleTerm direction=horizontal name=Terminal<CR>",
-        { desc = "Open a terminal horizontally" }
+	"n",
+	"<leader>hh",
+	"<cmd>ToggleTerm direction=horizontal name=Terminal<CR>",
+	{ desc = "Open a terminal horizontally" }
 )
 keymap.set(
-        "n",
-        "<leader>hv",
-        "<cmd>ToggleTerm size=60 direction=vertical name=Terminal<CR>",
-        { desc = "Open a terminal vertically" }
+	"n",
+	"<leader>hv",
+	"<cmd>ToggleTerm size=60 direction=vertical name=Terminal<CR>",
+	{ desc = "Open a terminal vertically" }
 )
 keymap.set(
-        "n",
-        "<leader>hf",
-        "<cmd>ToggleTerm direction=float name=Terminal<CR>",
-        { desc = "Open a floating terminal" }
+	"n",
+	"<leader>hf",
+	"<cmd>ToggleTerm direction=float name=Terminal<CR>",
+	{ desc = "Open a floating terminal" }
 )
 
 -- UI
-keymap.set("n", "<leader>uu", "<cmd>Telescope colorscheme<CR>", { desc = "Change colorscheme" })
+keymap.set("n", "<leader>uu", "<cmd>Themery<CR>", { desc = "Change colorscheme" })
 keymap.set("n", "<leader>un", "<cmd>set number<CR>", { desc = "Enable number" })
 keymap.set("n", "<leader>um", "<cmd>set nonumber<CR>", { desc = "Disable number" })
 keymap.set("n", "<leader>ur", "<cmd>set relativenumber<CR>", { desc = "Enable relative number" })
@@ -59,3 +59,8 @@ keymap.set("n", "<leader>ml", "<cmd>Lazy<CR>", { desc = "Open Lazy" })
 keymap.set("n", "<leader>mm", "<cmd>Mason<CR>", { desc = "Open Mason" })
 keymap.set("n", "<leader>mk", "<cmd>edit ~/.config/nvim/lua/sakai/core/keymaps.lua<CR>", { desc = "Edit keymaps file" })
 keymap.set("n", "<leader>mo", "<cmd>edit ~/.config/nvim/lua/sakai/core/options.lua<CR>", { desc = "Edit options file" })
+
+-- Buffers management
+keymap.set("n", "<leader>bb", "<cmd>buffers<CR>", { desc = "List opened buffers" })
+keymap.set("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Previous buffer" })
+keymap.set("n", "<leader>bn", "<cmd>bNext<CR>", { desc = "Next buffer" })

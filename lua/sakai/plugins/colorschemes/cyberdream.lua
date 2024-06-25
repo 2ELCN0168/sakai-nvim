@@ -1,9 +1,9 @@
 return {
-        --[[
-        "scottmckendry/cyberdream.nvim",
+	"scottmckendry/cyberdream.nvim",
+	--[[
         config = function()
                 vim.cmd("colorscheme cyberdream")
         end
         ]]
-        --
+	--
 }
