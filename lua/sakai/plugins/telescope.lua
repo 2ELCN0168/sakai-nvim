@@ -1,3 +1,8 @@
+--[[
+--      https://github.com/nvim-telescope/
+--      Telescope is a highly extendable fuzzy finder over lists.
+--]]
+
 return {
 	"nvim-telescope/telescope.nvim",
 	branch = "0.1.x",

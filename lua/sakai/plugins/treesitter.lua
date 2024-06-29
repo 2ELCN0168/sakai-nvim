@@ -1,59 +1,66 @@
+--[[
+--      https://github.com/nvim-treesitter/nvim-treesitter
+--      Nvim treesitter is a plugin to provide a simple and 
+--      easy way to use the interface for tree-sitter in Neovim
+--      and to provide some basic functionality such as highlighting.
+--]]
+
 return {
-        "nvim-treesitter/nvim-treesitter",
-        event = { "BufReadPre", "BufNewFile" } ,
-        build = ":TSUpdate",
-        dependencies = {
-                "windwp/nvim-ts-autotag",
-        },
-        config = function()
-                local treesitter = require("nvim-treesitter.configs")
+	"nvim-treesitter/nvim-treesitter",
+	event = { "BufReadPre", "BufNewFile" },
+	build = ":TSUpdate",
+	dependencies = {
+		"windwp/nvim-ts-autotag",
+	},
+	config = function()
+		local treesitter = require("nvim-treesitter.configs")
 
-                treesitter.setup({
-                        highlight = {
-                                enable = true,
-                                },
-                        indent = { enable = true },
+		treesitter.setup({
+			highlight = {
+				enable = true,
+			},
+			indent = { enable = true },
 
-                        autotag = {
-                                enable = true,
-                        },
-                        ensure_installed = {
-                                "c",
+			autotag = {
+				enable = true,
+			},
+			ensure_installed = {
+				"c",
 
-                                "java",
-                                "json",
+				"java",
+				"json",
 
-                                "bash",
+				"bash",
 
-                                "lua",
-                                "python",
-                                "javascript",
-                                "typescript",
+				"lua",
+				"python",
+				"javascript",
+				"typescript",
 
-                                "markdown",
-                                "markdown_inline",
+				"markdown",
+				"markdown_inline",
 
-                                "vim",
-                                "vimdoc",
+				"vim",
+				"vimdoc",
 
-                                "html",
-                                "css",
+				"html",
+				"css",
 
-                                "yaml",
+				"yaml",
 
-                                "gitignore",
+				"gitignore",
 
-                                "yuck",
-                        },
-                        incremental_selection = {
-                                enable = true,
-                                keymaps = {
-                                        init_selection = "<C-space>",
-                                        node_incremental = "<C-space>",
-                                        scope_incremental = false,
-                                        node_decremental = "<bs>",
-                                },
-                        },
-                })
-        end,
+				"yuck",
+			},
+			incremental_selection = {
+				enable = true,
+				keymaps = {
+					init_selection = "<C-space>",
+					node_incremental = "<C-space>",
+					scope_incremental = false,
+					node_decremental = "<bs>",
+				},
+			},
+		})
+	end,
 }

@@ -1,3 +1,9 @@
+--[[
+--      https://github.com/akinsho/bufferline.nvim
+--      Bufferline is a fancy plugin to modify the tabs/buffer
+--      management.
+--]]
+
 return {
 	"akinsho/bufferline.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },

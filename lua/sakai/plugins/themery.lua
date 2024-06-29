@@ -1,3 +1,8 @@
+--[[
+--      https://github.com/zaldih/themery.nvim
+--      Themery is a theme selector that saves for future sessions
+--      the current theme.
+--]]
 return {
 	"zaldih/themery.nvim",
 	config = function()

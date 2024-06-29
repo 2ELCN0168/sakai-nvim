@@ -7,11 +7,13 @@ local keymap = vim.keymap
 -- General
 keymap.set("n", "<leader>W", "<cmd>Alpha<CR>", { desc = "Sakai Menu" })
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search higlights" })
+keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- Increment/Decrement numbers
 keymap.set("n", "<leader>c+", "<C-a>", { desc = "Increment number" })
 keymap.set("n", "<leader>c-", "<C-x>", { desc = "Decrement number" })
+keymap.set("n", "<leader>c[", "<cmd>PeepsightEnable<CR>", { desc = "Enable Peepsight" })
+keymap.set("n", "<leader>c]", "<cmd>PeepsightDisable<CR>", { desc = "Disable Peepsight" })
 
 -- Window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
@@ -64,3 +66,7 @@ keymap.set("n", "<leader>mo", "<cmd>edit ~/.config/nvim/lua/sakai/core/options.l
 keymap.set("n", "<leader>bb", "<cmd>buffers<CR>", { desc = "List opened buffers" })
 keymap.set("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Previous buffer" })
 keymap.set("n", "<leader>bn", "<cmd>bNext<CR>", { desc = "Next buffer" })
+
+-- Sessions (Plugin)
+keymap.set("n", "<leader>wr", "<cmd>SessionRestore<CR>", { desc = "Restore session for cwd" })
+keymap.set("n", "<leader>ws", "<cmd>SessionSave<CR>", { desc = "Save session for auto session root dir" })

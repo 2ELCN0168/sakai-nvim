@@ -1,3 +1,8 @@
+--[[
+--      https://github.com/chentoast/marks.nvim
+--      Marks is a plugin to change the neovim builtin marks management.
+--]]
+
 return {
 	"chentoast/marks.nvim",
 	config = function()
