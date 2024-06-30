@@ -66,6 +66,7 @@ keymap.set("n", "<leader>mo", "<cmd>edit ~/.config/nvim/lua/sakai/core/options.l
 keymap.set("n", "<leader>bb", "<cmd>buffers<CR>", { desc = "List opened buffers" })
 keymap.set("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Previous buffer" })
 keymap.set("n", "<leader>bn", "<cmd>bNext<CR>", { desc = "Next buffer" })
+keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Delete/Close buffer" })
 
 -- Sessions (Plugin)
 keymap.set("n", "<leader>wr", "<cmd>SessionRestore<CR>", { desc = "Restore session for cwd" })
