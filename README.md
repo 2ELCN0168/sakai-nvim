@@ -36,8 +36,8 @@ git clone https://github.com/2ELCN0168/sakai-nvim nvim
 ### 🐋 Try it with Docker!
 
 ```bash
-docker run -w /root --rm --it alpine:edge sh -uelic '
-apk add git lazygit neovim ripgrep alpine-sdk fzf --update
+docker run -w /root --rm -it alpine:edge sh -uelic '
+apk add git lazygit neovim ripgrep fd alpine-sdk fzf --update
 git clone https://github.com/2ELCN0168/sakai-nvim ~/.config/nvim
 cd ~/.config/nvim
 nvim
@@ -56,6 +56,8 @@ There are some dependencies:
 - ripgrep ;
 - fzf ;
 - lazygit ;
+- fd ;
+- wl-clipboard _(only if you use Wayland)_ ;
 
   ***
 
