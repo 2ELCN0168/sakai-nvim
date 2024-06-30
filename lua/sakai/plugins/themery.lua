@@ -120,6 +120,86 @@ return {
                                                 vim.opt.background = "dark"
                                         ]],
 				},
+				{
+					name = "Sonokai (Dark)",
+					colorscheme = "sonokai",
+					before = [[
+                                                vim.opt.background = "dark"
+                                        ]],
+				},
+				{
+					name = "Blue Moon (Dark)",
+					colorscheme = "blue-moon",
+					before = [[
+                                                vim.opt.background = "dark"
+                                        ]],
+				},
+				{
+					name = "Everforest (Light)",
+					colorscheme = "everforest",
+					before = [[
+                                                vim.opt.background = "light"
+                                        ]],
+				},
+				{
+					name = "Everforest (Dark)",
+					colorscheme = "everforest",
+					before = [[
+                                                vim.opt.background = "dark"
+                                        ]],
+				},
+				{
+					name = "Dracula (Dark)",
+					colorscheme = "dracula",
+					before = [[
+                                                vim.opt.background = "dark"
+                                        ]],
+				},
+				{
+					name = "Github (Light)",
+					colorscheme = "github_light",
+					before = [[
+                                                vim.opt.background = "light"
+                                        ]],
+				},
+
+				{
+					name = "Github (Soft)",
+					colorscheme = "github_dark",
+					before = [[
+                                                vim.opt.background = "dark"
+                                        ]],
+				},
+
+				{
+					name = "Github (Soft Darker)",
+					colorscheme = "github_dark_dimmed",
+					before = [[
+                                                vim.opt.background = "dark"
+                                        ]],
+				},
+
+				{
+					name = "Github (Dark)",
+					colorscheme = "github_dark_default",
+					before = [[
+                                                vim.opt.background = "dark"
+                                        ]],
+				},
+				{
+					name = "Nvimgelion (Dark)",
+					colorscheme = "nvimgelion",
+					before = [[
+                                                vim.opt.background = "dark"
+                                        ]],
+				},
+				{
+					name = "Miasma (Dark)",
+					colorscheme = "miasma",
+					before = [[
+                                                vim.opt.background = "dark"
+                                        ]],
+				},
 			},
 			themeConfigFile = "~/.config/nvim/lua/sakai/core/theme.lua", -- Described below
 			livePreview = true, -- Apply theme while browsing. Default to true.

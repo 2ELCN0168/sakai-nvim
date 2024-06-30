@@ -3,6 +3,6 @@
 vim.opt.background = "dark"
 
 
-vim.cmd("colorscheme tokyonight-storm")
-vim.g.theme_id = 4
+vim.cmd("colorscheme github_dark")
+vim.g.theme_id = 23
 -- end themery block

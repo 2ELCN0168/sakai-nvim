@@ -55,6 +55,8 @@ keymap.set("n", "<leader>um", "<cmd>set nonumber<CR>", { desc = "Disable number"
 keymap.set("n", "<leader>ur", "<cmd>set relativenumber<CR>", { desc = "Enable relative number" })
 keymap.set("n", "<leader>ue", "<cmd>set norelativenumber<CR>", { desc = "Disable relative number" })
 keymap.set("n", "<leader>ub", "<cmd>Barbecue toggle<CR>", { desc = "Disable relative number" })
+keymap.set("n", "<leader>u[", "<cmd>set background=light<CR>", { desc = "Set background Light" })
+keymap.set("n", "<leader>u]", "<cmd>set background=dark<CR>", { desc = "Set background Dark" })
 
 -- Management
 keymap.set("n", "<leader>ml", "<cmd>Lazy<CR>", { desc = "Open Lazy" })
@@ -67,6 +69,7 @@ keymap.set("n", "<leader>bb", "<cmd>buffers<CR>", { desc = "List opened buffers"
 keymap.set("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Previous buffer" })
 keymap.set("n", "<leader>bn", "<cmd>bNext<CR>", { desc = "Next buffer" })
 keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Delete/Close buffer" })
+keymap.set("n", "<leader>bx", "<cmd>bd!<CR>", { desc = "Delete/Close buffer without saving" })
 
 -- Sessions (Plugin)
 keymap.set("n", "<leader>wr", "<cmd>SessionRestore<CR>", { desc = "Restore session for cwd" })
