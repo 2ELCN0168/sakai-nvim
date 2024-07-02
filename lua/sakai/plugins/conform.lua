@@ -33,8 +33,8 @@ return {
                         formatters = {
                                 ['clang-format'] = {
                                         args = {
-                                                --'--style={BasedOnStyle: LLVM, IndentWidth: 8, TabWidth: 8, UseTab: Never, AlignAfterOpenBracket: Align, AlignArrayOfStructures: Right, AlignTrailingComments: Always, ColumnLimit: 80, PointerAlignment: Right, ReferenceAlignment: Right, SpaceBeforeAssignmentOperators: true, SpaceBeforeCaseColon: false, SpaceBeforeSquareBrackets: false, SpaceInEmptyBlock: false, SpacesInParentheses: false, SpacesInSquareBrackets: false, AllowShortFunctionsOnASingleLine: Empty}',
-                                                '--style={BasedOnStyle: LLVM, IndentWidth: 8, TabWidth: 8, UseTab: Always, BreakBeforeBraces: Linux, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 80, PointerAlignment: Right, AllowShortBlocksOnASingleLine: Empty, AllowShortFunctionsOnASingleLine: Empty}',
+                                                --'--style={BasedOnStyle: LLVM, IndentWidth: 8, TabWidth: 8, UseTab: Never, AlignAfterOpenBracket: Align, AlignArrayOfStructures: Right, AlignTrailingComments: Always, PointerAlignment: Right, ReferenceAlignment: Right, SpaceBeforeAssignmentOperators: true, SpaceBeforeCaseColon: false, SpaceBeforeSquareBrackets: false, SpaceInEmptyBlock: false, SpacesInParentheses: false, SpacesInSquareBrackets: false, AllowShortFunctionsOnASingleLine: Empty}',
+                                                '--style={BasedOnStyle: LLVM, IndentWidth: 8, TabWidth: 8, UseTab: Always, BreakBeforeBraces: Linux, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, PointerAlignment: Right, AllowShortBlocksOnASingleLine: Empty, ColumnLimit: 0, AllowShortFunctionsOnASingleLine: Empty}',
                                         },
                                         stdin = true,
                                 },

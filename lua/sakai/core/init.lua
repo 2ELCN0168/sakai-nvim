@@ -1,2 +1,2 @@
-require("sakai.core.options")
-require("sakai.core.keymaps")
+require 'sakai.core.options'
+require 'sakai.core.keymaps'

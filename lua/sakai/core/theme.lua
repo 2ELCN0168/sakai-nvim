@@ -1,8 +1,8 @@
--- Themery block
+                -- Themery block
 -- This block will be replaced by Themery.
-vim.opt.background = "light"
+vim.opt.background = "dark"
 
 
-vim.cmd("colorscheme tokyonight-day")
-vim.g.theme_id = 3
+vim.cmd("colorscheme dracula")
+vim.g.theme_id = 21
 -- end themery block

@@ -1,3 +1,3 @@
-require("sakai.core")
-require("sakai.lazy")
-require("sakai.core.theme")
+require 'sakai.core'
+require 'sakai.lazy'
+require 'sakai.core.theme'
