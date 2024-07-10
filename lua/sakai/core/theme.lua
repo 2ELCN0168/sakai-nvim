@@ -3,6 +3,6 @@
 vim.opt.background = "dark"
 
 
-vim.cmd("colorscheme dracula")
-vim.g.theme_id = 21
+vim.cmd("colorscheme catppuccin-macchiato")
+vim.g.theme_id = 15
 -- end themery block

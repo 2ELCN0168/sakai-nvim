@@ -58,6 +58,7 @@ There are some dependencies:
 - lazygit ;
 - fd ;
 - wl-clipboard _(only if you use Wayland)_ ;
+- sshfs/ssh ;
 
   ***
 

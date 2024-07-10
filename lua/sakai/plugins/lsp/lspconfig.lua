@@ -77,18 +77,18 @@ return {
                                         opts
                                 ) -- see available code actions, in visual mode will apply to selection
 
-                                opts.desc = 'Smart rename'
-                                keymap.set(
-                                        'n',
-                                        '<leader>rn',
-                                        vim.lsp.buf.rename,
-                                        opts
-                                ) -- smart rename
+                                -- opts.desc = 'Smart rename'
+                                -- keymap.set(
+                                --         'n',
+                                --         '<leader>rn',
+                                --         vim.lsp.buf.rename,
+                                --         opts
+                                -- ) -- smart rename
 
                                 opts.desc = 'Show buffer diagnostics'
                                 keymap.set(
                                         'n',
-                                        '<leader>D',
+                                        '<leader>cd',
                                         '<cmd>Telescope diagnostics bufnr=0<CR>',
                                         opts
                                 ) -- show  diagnostics for file
@@ -96,7 +96,7 @@ return {
                                 opts.desc = 'Show line diagnostics'
                                 keymap.set(
                                         'n',
-                                        '<leader>d',
+                                        '<leader>cd',
                                         vim.diagnostic.open_float,
                                         opts
                                 ) -- show diagnostics for line
