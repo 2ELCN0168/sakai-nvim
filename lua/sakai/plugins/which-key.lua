@@ -14,7 +14,7 @@ return {
         end,
         opts = {
                 plugins = { spelling = true },
-                defaults = {
+                --[[ defaults = {
                         mode = { 'n', 'v' },
                         ['<leader>e'] = { name = '📁 Explorer' },
                         ['<leader>h'] = { name = '💻 Terminal' },
@@ -28,15 +28,33 @@ return {
                         ['<leader>m'] = { name = '💠 Manage Sakai' },
                         ['<leader>x'] = { name = '🍚 Trouble' },
                         ['<leader>q'] = { name = '📡 SSH' },
-                },
-                icons = {
-                        group = '',
+                }, ]]
+                {
+                        icons = {
+                                rules = false,
+                                mappings = false,
+                                group = '',
+                        },
                 },
         },
 
         config = function(_, opts)
                 local wk = require 'which-key'
                 wk.setup(opts)
-                wk.register(opts.defaults)
+                --wk.register(opts.defaults)
+                wk.add {
+                        { '<leader>e', group = '📁 Explorer' },
+                        { '<leader>h', group = '💻 Terminal' },
+                        { '<leader>s', group = '🏮 Splits' },
+                        { '<leader>w', group = '🌸 Windows' },
+                        { '<leader>t', group = '🔰 Tabs' },
+                        { '<leader>b', group = '🧼 Buffers' },
+                        { '<leader>f', group = '🥡 Fuzzy finder' },
+                        { '<leader>u', group = '🐲 UI' },
+                        { '<leader>c', group = '🌀 Code' },
+                        { '<leader>m', group = '💠 Manage Sakai' },
+                        { '<leader>x', group = '🍚 Trouble' },
+                        { '<leader>q', group = '📡 SSH' },
+                }
         end,
 }

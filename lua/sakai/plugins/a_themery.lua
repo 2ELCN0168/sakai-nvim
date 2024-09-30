@@ -5,6 +5,8 @@
 --]]
 return {
         'zaldih/themery.nvim',
+        lazy = false,
+        priority = 1000,
         config = function()
                 require('themery').setup {
                         themes = {
@@ -201,7 +203,7 @@ return {
                                         ]],
                                 },
                         },
-                        themeConfigFile = '~/.config/nvim/lua/sakai/core/theme.lua', -- Described below
+                        -- themeConfigFile = '~/.config/nvim/lua/sakai/core/theme.lua', -- Described below
                         livePreview = true, -- Apply theme while browsing. Default to true.
                 }
         end,

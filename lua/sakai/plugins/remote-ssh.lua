@@ -1,28 +1,10 @@
 return {
-        'nosduco/remote-sshfs.nvim',
-        dependencies = { 'nvim-telescope/telescope.nvim' },
-        opts = {},
-        config = function()
-                local keymap = vim.keymap
-                require('remote-sshfs').setup {
-                        keymap.set(
-                                'n',
-                                '<leader>qc',
-                                '<cmd>RemoteSSHFSConnect<CR>',
-                                { desc = 'Connect SSH' }
-                        ),
-                        keymap.set(
-                                'n',
-                                '<leader>qd',
-                                '<cmd>RemoteSSHFSDisconnect<CR>',
-                                { desc = 'Disconnect SSH' }
-                        ),
-                        keymap.set(
-                                'n',
-                                '<leader>qf',
-                                '<cmd>RemoteSSHFSFindFiles<CR>',
-                                { desc = 'Find files remotely' }
-                        ),
-                }
-        end,
+        'amitds1997/remote-nvim.nvim',
+        version = '*', -- Pin to GitHub releases
+        dependencies = {
+                'nvim-lua/plenary.nvim', -- For standard functions
+                'MunifTanjim/nui.nvim', -- To build the plugin UI
+                'nvim-telescope/telescope.nvim', -- For picking b/w different remote methods
+        },
+        config = true,
 }
