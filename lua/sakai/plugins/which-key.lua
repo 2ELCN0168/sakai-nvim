@@ -14,27 +14,10 @@ return {
         end,
         opts = {
                 plugins = { spelling = true },
-                --[[ defaults = {
-                        mode = { 'n', 'v' },
-                        ['<leader>e'] = { name = '📁 Explorer' },
-                        ['<leader>h'] = { name = '💻 Terminal' },
-                        ['<leader>s'] = { name = '🏮 Splits' },
-                        ['<leader>w'] = { name = '🌸 Windows' },
-                        ['<leader>t'] = { name = '🔰 Tabs' },
-                        ['<leader>b'] = { name = '🧼 Buffers' },
-                        ['<leader>f'] = { name = '🥡 Fuzzy finder' },
-                        ['<leader>u'] = { name = '🐲 UI' },
-                        ['<leader>c'] = { name = '🌀 Code' },
-                        ['<leader>m'] = { name = '💠 Manage Sakai' },
-                        ['<leader>x'] = { name = '🍚 Trouble' },
-                        ['<leader>q'] = { name = '📡 SSH' },
-                }, ]]
-                {
-                        icons = {
-                                rules = false,
-                                mappings = false,
-                                group = '',
-                        },
+                icons = {
+                        rules = false,
+                        mappings = false,
+                        group = '',
                 },
         },
 
@@ -58,3 +41,47 @@ return {
                 }
         end,
 }
+
+--[[
+--      https://github.com/folke/which-key.nvim
+--      WhichKey is a lua plugin for Neovim 0.5 that 
+--      displays a popup with possible key bindings of the 
+--      command you started typing.
+--]]
+
+-- return {
+--         'folke/which-key.nvim',
+--         event = 'VeryLazy',
+--         init = function()
+--                 vim.o.timeout = true
+--                 vim.o.timeoutlen = 300
+--         end,
+--         opts = {
+--                 plugins = { spelling = true },
+--                 icons = {
+--                         -- Désactive les icônes par défaut
+--                         group = '',
+--                         mappings = false,
+--                         rules = false,
+--                 },
+--         },
+--         config = function(_, opts)
+--                 local wk = require 'which-key'
+--                 wk.setup(opts)
+--
+--                 wk.register({
+--                         e = { name = '📁 Explorer' },
+--                         h = { name = '💻 Terminal' },
+--                         s = { name = '🏮 Splits' },
+--                         w = { name = '🌸 Windows' },
+--                         t = { name = '🔰 Tabs' },
+--                         b = { name = '🧼 Buffers' },
+--                         f = { name = '🥡 Fuzzy finder' },
+--                         u = { name = '🐲 UI' },
+--                         c = { name = '🌀 Code' },
+--                         m = { name = '💠 Manage Sakai' },
+--                         x = { name = '🍚 Trouble' },
+--                         q = { name = '📡 SSH' },
+--                 }, { prefix = '<leader>' })
+--         end,
+-- }
