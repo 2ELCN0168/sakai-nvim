@@ -32,6 +32,9 @@ return {
                                                 'SCRIPT',
                                                 'ALGORITHM',
                                                 'ALGO',
+                                                'REGEX',
+                                                'AWK',
+                                                'SED',
                                         },
                                 },
 
