@@ -151,6 +151,12 @@ keymap.set('n', '<leader>bn', '<cmd>bnext<CR>', { desc = 'Next buffer' })
 keymap.set('n', '<leader>bd', '<cmd>bd<CR>', { desc = 'Delete/Close buffer' })
 keymap.set(
         'n',
+        '<leader>ba',
+        '<cmd>bufdo bdelete<CR>',
+        { desc = 'Close all buffers' }
+)
+keymap.set(
+        'n',
         '<leader>bx',
         '<cmd>bd!<CR>',
         { desc = 'Delete/Close buffer without saving' }
